@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jetty.version>9.4.20.v20190813</jetty.version>
+    <gridgain.version>8.7.6</gridgain.version>
+  </properties>
+
+  <groupId>com.gridgain</groupId>
+  <artifactId>test</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <packaging>war</packaging>
+
+  <name>GridGain test</name>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.gridgain</groupId>
+      <artifactId>ignite-core</artifactId>
+      <version>${gridgain.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gridgain</groupId>
+      <artifactId>ignite-web</artifactId>
+      <version>${gridgain.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gridgain</groupId>
+      <artifactId>ignite-log4j</artifactId>
+      <version>${gridgain.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gridgain</groupId>
+      <artifactId>ignite-spring</artifactId>
+      <version>${gridgain.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gridgain</groupId>
+      <artifactId>gridgain-core</artifactId>
+      <version>${gridgain.version}</version>
+    </dependency>
+
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>GridGain External Repository</id>
+      <url>http://www.gridgainsystems.com/nexus/content/repositories/external</url>
+    </repository>
+  </repositories>
+
+</project>
